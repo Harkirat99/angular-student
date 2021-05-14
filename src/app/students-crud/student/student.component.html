@@ -1,0 +1,36 @@
+<div class="mainCont">
+
+
+    <div class="mat-display-2">Update</div>
+
+    <div class="row inputCont">
+        <mat-form-field class="col-sm-6" >
+            <input type="text" matInput placeholder="Update your Student ID" [(ngModel)]="student.id">
+        </mat-form-field>
+
+        <mat-form-field  class="col-sm-6">
+            <input type="text" matInput placeholder="Update your Student name" [(ngModel)]="student.name">
+        </mat-form-field>
+
+        <mat-form-field class="col-sm-6" >
+            <input type="text" matInput placeholder="Update your Student age" [(ngModel)]="student.age">
+        </mat-form-field>
+
+        <mat-form-field   class="col-sm-6" >
+            <mat-label>Select your class</mat-label>
+            <mat-select [(ngModel)]="student.class.id">
+                <mat-option *ngFor="let class of classes" [value]="class.id">
+                    {{class.name}}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+
+
+    </div>
+
+    
+
+        <button  class="leftButton" mat-raised-button color="primary" (click)="save()">Save</button>
+        <button   class="rightButton" mat-raised-button color="primary" (click)="back()">Back</button>
+
+</div>

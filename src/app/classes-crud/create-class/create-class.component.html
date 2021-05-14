@@ -1,0 +1,14 @@
+<div class="mainCont">
+  <div class="mat-display-2">Create a new Class </div>
+  <div class="row inputCont">
+    <mat-form-field class="col-sm-12">
+      <mat-label>Enter your Class</mat-label>
+      <input type="text" matInput placeholder="for ex.first" [(ngModel)]="class.name">
+    </mat-form-field>
+  </div>
+
+
+  <button class="leftButton" mat-raised-button color="primary" (click)="createClass()">Create</button>
+  <button class="rightButton" mat-raised-button color="primary" (click)="back()">Back</button>
+
+</div>

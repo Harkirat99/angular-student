@@ -1,0 +1,15 @@
+<mat-toolbar color="primary" class="navbar">
+    <div>School</div>
+    <div>
+        <button class="btnclass" routerLinkActive="active" [routerLink]="['classes']" color="basic"
+            mat-button>Class</button>
+        <button class="btnstudent" routerLinkActive="active" [routerLink]="['students']" color="basic"
+            mat-button>Student</button>
+        <button class="btnteacher" routerLinkActive="active" [routerLink]="['teachers']" color="basic"
+            mat-button>Teacher</button>
+        <button *ngIf="auth.isLoggedIn" color="basic" (click)="logout()" mat-button>Logout</button>
+    </div>
+
+</mat-toolbar>
+
+<router-outlet></router-outlet>
