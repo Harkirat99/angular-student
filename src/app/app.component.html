@@ -7,6 +7,8 @@
             mat-button>Student</button>
         <button class="btnteacher" routerLinkActive="active" [routerLink]="['teachers']" color="basic"
             mat-button>Teacher</button>
+        <button *ngIf="!auth.isLoggedIn" routerLinkActive="active" [routerLink]="['register']" color="basic" mat-button>Register</button>
+        <button *ngIf="!auth.isLoggedIn" routerLinkActive="active" [routerLink]="['login']" color="basic" mat-button>Login</button>
         <button *ngIf="auth.isLoggedIn" color="basic" (click)="logout()" mat-button>Logout</button>
     </div>
 
