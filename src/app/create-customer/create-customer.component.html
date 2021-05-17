@@ -1,0 +1,46 @@
+<div class="mainCont">
+  <div class="mat-display-2">Create a User </div>
+  <div class="row inputCont">
+    <mat-form-field class="col-sm-6">
+      <mat-label>Enter your firstname</mat-label>
+      <input type="text" matInput placeholder="for ex.first" [(ngModel)]="customer.firstname">
+    </mat-form-field>
+
+    <mat-form-field class="col-sm-6">
+      <mat-label>Enter your lastname</mat-label>
+      <input type="text" matInput placeholder="for ex.first" [(ngModel)]="customer.lastname">
+    </mat-form-field>
+
+
+    <mat-form-field class="col-sm-6">
+      <mat-label>Enter your email</mat-label>
+      <input type="text" matInput placeholder="for ex.first" [(ngModel)]="customer.email">
+    </mat-form-field>
+
+
+    <mat-form-field class="col-sm-6">
+      <mat-label>Enter your country</mat-label>
+      <input type="text" matInput placeholder="for ex.first" [(ngModel)]="customer.country">
+    </mat-form-field>
+
+    <mat-form-field class="col-sm-6">
+      <mat-label>Enter your state</mat-label>
+      <input type="text" matInput placeholder="for ex.first" [(ngModel)]="customer.state">
+    </mat-form-field>
+
+    <mat-form-field class="col-sm-6">
+      <mat-label>Enter your city</mat-label>
+      <input type="text" matInput placeholder="for ex.first" [(ngModel)]="customer.city">
+    </mat-form-field>
+
+    <mat-form-field class="col-sm-6">
+      <mat-label>Enter your phonenumber</mat-label>
+      <input type="text" matInput placeholder="for ex.first" [(ngModel)]="customer.phonenumber">
+    </mat-form-field>
+  </div>
+
+
+  <button class="leftButton" mat-raised-button color="primary" (click)="createClass()">Create</button>
+  <button class="rightButton" mat-raised-button color="primary" (click)="back()">Back</button>
+
+</div>

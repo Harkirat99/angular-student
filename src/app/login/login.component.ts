@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { HttpClient } from '@angular/common/http'
 import { FormControl, FormBuilder, FormGroup, Validators } from '@angular/forms'
-import { User } from '../user'
+import { User } from '../user'   ;
 import { Router } from '@angular/router';
 import { AuthserviceService } from '../authservice.service'
 
@@ -32,7 +32,7 @@ export class LoginComponent {
     this.auth.login(this.user).subscribe(res => {
       if (res) {
         console.log(res)
-        this.router.navigate(['students'])
+        this.router.navigate(['customers'])
         this.auth.setLoggedIn(true)
       } else {
         console.log("Error")

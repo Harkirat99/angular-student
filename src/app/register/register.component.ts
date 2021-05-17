@@ -18,7 +18,7 @@ export class RegisterComponent implements OnInit {
   constructor(private http: HttpClient, private fb: FormBuilder,
     private auth: AuthserviceService,
     private router: Router) {
-    this.loginForm = this.fb.group({
+    this.loginForm = this.fb.group({   
       email: new FormControl(null, Validators.required),
       name: new FormControl(null, Validators.required),
       password: new FormControl(null, Validators.required)
